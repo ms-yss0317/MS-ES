@@ -12,17 +12,18 @@
         body { font-family: 'NanumSquareRound', sans-serif; }
     </style>
 </head>
-<body class="bg-amber-50/40 min-h-screen py-10 px-4">
+<!-- 💡 배경을 더 포근하고 따뜻한 웜베이지(orange-50) 톤으로 변경 -->
+<body class="bg-[#faf6f0] min-h-screen py-12 px-4">
 
     <!-- 메인 컨테이너 -->
     <div class="max-w-6xl mx-auto">
         
         <!-- 상단 헤더 -->
-        <header class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-amber-800 tracking-tight">
-                🎒 미성초등학교 수업 보물창고
+        <header class="text-center mb-14">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-amber-900 tracking-tight">
+                🎒 참쌤들의 수업 보물창고
             </h1>
-            <p class="text-amber-600 mt-2 text-sm md:text-base font-medium">
+            <p class="text-amber-700/80 mt-3 text-sm md:text-base font-medium">
                 우리 아이들을 위한 전학년·전교과 수업 자료 공유 공간입니다.
             </p>
         </header>
@@ -31,57 +32,87 @@
         <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
             <!-- 카드 1: 국어 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-orange-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">📖</div>
-                <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">1~2학년</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">반짝반짝 국어 놀이</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">한글 자모음 익히기와 재미있는 말놀이 활동지 모음입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-orange-400 hover:bg-orange-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-orange-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">📖</div>
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full">1~2학년</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">반짝반짝 국어 놀이</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">한글 자모음 익히기와 재미있는 말놀이 활동지 모음입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-orange-400 hover:bg-orange-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#d97706] hover:shadow-[0_2px_0_0_#d97706] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
             <!-- 카드 2: 수학 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-blue-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">📐</div>
-                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">3~4학년</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">쏙쏙 수학 보드게임</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">분수와 소수를 놀이로 쉽고 재미있게 배우는 교구 도안입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-blue-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">📐</div>
+                    <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">3~4학년</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">쏙쏙 수학 보드게임</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">분수와 소수를 놀이로 쉽고 재미있게 배우는 교구 도안입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#2563eb] hover:shadow-[0_2px_0_0_#2563eb] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
             <!-- 카드 3: 사회 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-green-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">🗺️</div>
-                <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">5~6학년</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">역사 인물 가상 인터뷰</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">조선 시대 주요 인물을 인터뷰 형식으로 정리하는 활동지입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-green-400 hover:bg-green-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-green-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🗺️</div>
+                    <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full">5~6학년</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">역사 인물 가상 인터뷰</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">조선 시대 주요 인물을 인터뷰 형식으로 정리하는 활동지입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-green-400 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#16a34a] hover:shadow-[0_2px_0_0_#16a34a] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
             <!-- 카드 4: 과학 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-purple-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">🧪</div>
-                <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full">공통</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">방구석 실험실 PPT</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">교실이나 집에서 안전하게 수행할 수 있는 과학 실험 안내 자료입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-purple-400 hover:bg-purple-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-purple-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🧪</div>
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full">공통</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">방구석 실험실 PPT</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">교실이나 집에서 안전하게 수행할 수 있는 과학 실험 안내 자료입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-purple-400 hover:bg-purple-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#7c3aed] hover:shadow-[0_2px_0_0_#7c3aed] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
             <!-- 카드 5: 창체 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-pink-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">🎨</div>
-                <span class="bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full">창체</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">도란도란 교실 심리 게임</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">학기 초 서먹한 분위기를 깨뜨려 줄 아이스브레이킹 모음집입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-pink-400 hover:bg-pink-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-pink-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🎨</div>
+                    <span class="bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full">창체</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">도란도란 교실 심리 게임</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">학기 초 서먹한 분위기를 깨뜨려 줄 아이스브레이킹 모음집입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-pink-400 hover:bg-pink-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#db2777] hover:shadow-[0_2px_0_0_#db2777] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
             <!-- 카드 6: 환경 -->
-            <div class="bg-white rounded-3xl p-6 shadow-sm border-2 border-emerald-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-                <div class="text-4xl mb-4">🌱</div>
-                <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">생태환경</span>
-                <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">지구를 구하는 챌린지</h3>
-                <p class="text-slate-500 text-sm leading-relaxed mb-4">일주일 동안 학급에서 실천하는 탄소중립 체크리스트와 스티커판입니다.</p>
-                <a href="#" class="inline-block w-full text-center bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-2xl text-sm transition-colors">자료 보러가기</a>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-emerald-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-4xl mb-4">🌱</div>
+                    <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">생태환경</span>
+                    <h3 class="text-xl font-bold text-slate-800 mt-3 mb-2">지구를 구하는 챌린지</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">일주일 동안 학급에서 실천하는 탄소중립 체크리스트와 스티커판입니다.</p>
+                </div>
+                <!-- 💡 입체감 있는 둥근 단추 스타일 버튼 -->
+                <button onclick="location.href='#'" class="w-full bg-emerald-400 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-2xl text-sm shadow-[0_4px_0_0_#059669] hover:shadow-[0_2px_0_0_#059669] hover:translate-y-[2px] active:translate-y-[4px] active:shadow-none transition-all">
+                    자료 보러가기
+                </button>
             </div>
 
         </main>
