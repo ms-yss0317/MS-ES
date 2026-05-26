@@ -12,66 +12,93 @@
         body { font-family: 'NanumSquareRound', sans-serif; }
     </style>
 </head>
-<!-- 💡 전체 배경을 따뜻하고 부드러운 파스텔 살구 베이지 톤으로 변경 -->
+<!-- 전체 배경: 따뜻하고 부드러운 파스텔 살구 베이지 톤 -->
 <body class="bg-gradient-to-br from-[#fff7ed] via-[#fef3c7] to-[#ffedd5] min-h-screen py-16 px-4">
 
     <!-- 메인 컨테이너 -->
     <div class="max-w-6xl mx-auto">
         
         <!-- 상단 헤더 -->
-        <header class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-extrabold text-amber-900 tracking-tight">
+        <header class="text-center mb-16">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-amber-950 tracking-tight drop-shadow-sm">
                 🎒 미성초 수업 보물 창고
             </h1>
-            <p class="text-amber-800/70 mt-3 text-sm md:text-base font-medium">
+            <p class="text-amber-800/80 mt-3 text-sm md:text-base font-medium">
                 원하는 보물상자를 클릭해보세요.
             </p>
         </header>
 
         <!-- 가로 3개, 세로 2개 정렬 그리드 레이아웃 (총 6개) -->
-        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8 max-w-5xl mx-auto">
             
             <!-- 단추 1: 안녕 미성초! -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">🪐</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors">안녕 미성초!</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">아이들 영상 자료</p>
-            </button>
+            <div class="relative group">
+                <!-- 💡 버튼 밑바닥의 짙은 주황색 8px 두께감 두께 레이어 (입체 구조물) -->
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <!-- 실제 눌리는 상자 버튼 몸통 -->
+                <button onclick="location.href='https://넣고싶은주소.com'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <!-- 상자 잠금장치 데코 -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">🪐</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">안녕 미성초!</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">아이들 영상 자료</p>
+                </button>
+            </div>
 
-            <!-- 단추 2: 디지털 갤러리 -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">✏️</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors"> 미성초 갤러리</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">아이들 작품 전시</p>
-            </button>
+            <!-- 단추 2: 미성초 갤러리 -->
+            <div class="relative group">
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <button onclick="location.href='https://넣고싶은주소.com'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">✏️</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">미성초 갤러리</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">아이들 작품 전시</p>
+                </button>
+            </div>
 
             <!-- 단추 3: 바이브코딩 -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">🧮</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors">바이브코딩</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">할 수 있다!</p>
-            </button>
+            <div class="relative group">
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <button onclick="location.href='https://넣고싶은주소.com'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">🧮</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">바이브코딩</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">할 수 있다!</p>
+                </button>
+            </div>
 
-            <!-- 단추 4: 과학정보부 링크 -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">🧮</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors">과학 정보부</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">유용해요!</p>
-            </button>
+            <!-- 단추 4: 과학 정보부 -->
+            <div class="relative group">
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <button onclick="location.href='https://넣고싶은주소.com'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">🧪</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">과학 정보부</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">유용해요!</p>
+                </button>
+            </div>
 
-            <!-- 단추 5: 기타자료 -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">✏️</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors">언젠가</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">쓰일 날이 있을거예요</p>
-            </button>
+            <!-- 단추 5: 언젠가 -->
+            <div class="relative group">
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <button onclick="location.href='#'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">📁</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">언젠가</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">쓰일 날이 있을거예요</p>
+                </button>
+            </div>
 
             <!-- 단추 6: 예비 -->
-            <button onclick="location.href='#'" class="group relative text-left bg-gradient-to-b from-white to-[#fff7ed] border-2 border-orange-200/60 rounded-3xl p-6 shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_8px_16px_rgba(217,119,6,0.15)] hover:shadow-[inset_0_2px_0_0_rgba(255,255,255,0.8),0_12px_20px_rgba(217,119,6,0.25)] hover:-translate-y-1 active:translate-y-[2px] active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] transition-all duration-200">
-                <div class="text-3xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.1)]">📺</div>
-                <h3 class="text-xl font-bold text-amber-950 tracking-tight group-hover:text-orange-600 transition-colors">예비</h3>
-                <p class="text-amber-800/60 text-sm mt-1 font-medium">자료 공간</p>
-            </button>
+            <div class="relative group">
+                <div class="absolute inset-0 bg-amber-700 rounded-3xl translate-y-[8px]"></div>
+                <button onclick="location.href='#'" class="w-full relative text-left bg-gradient-to-b from-[#fcd34d] via-[#f59e0b] to-[#d97706] border-4 border-[#b45309] rounded-3xl p-6 shadow-[inset_0_4px_0_0_rgba(255,255,255,0.4)] group-hover:translate-y-[3px] active:translate-y-[8px] transition-all duration-100 cursor-pointer">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[4px] w-8 h-6 bg-[#78350f] border-2 border-[#fef08a] rounded-b-lg shadow-md"></div>
+                    <div class="text-4xl mb-4 filter drop-shadow-[0_2px_3px_rgba(0,0,0,0.2)]">📦</div>
+                    <h3 class="text-xl font-extrabold text-amber-950 tracking-tight">예비</h3>
+                    <p class="text-amber-900/80 text-sm mt-1 font-bold">자료 공간</p>
+                </button>
+            </div>
 
         </main>
     </div>
